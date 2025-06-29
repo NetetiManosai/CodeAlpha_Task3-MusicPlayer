@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Music Player</h1>
+  <div class="music-player">
+    <div class="album-art">
+      <img id="album-art" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76" alt="Album Art">
+      <canvas id="waveform" class="waveform"></canvas>
+    </div>
+    <div class="song-info">
+      <h2 class="song-title" id="song-title">Song Title</h2>
+      <p class="song-artist" id="song-artist">Artist</p>
+      <p class="song-duration" id="song-duration">0:00 / 0:00</p>
+    </div>
+    <div class="progress-container">
+      <span class="progress-time" id="current-time">0:00</span>
+      <div class="progress-bar" id="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <span class="progress-time" id="duration">0:00</span>
+    </div>
+    <div class="controls">
+      <button class="control-btn shuffle" id="shuffle-btn" title="Shuffle">🔀</button>
+      <button class="control-btn" onclick="previousSong()">⏮</button>
+      <button class="control-btn play-pause" id="play-pause" onclick="togglePlayPause()">▶</button>
+      <button class="control-btn" onclick="nextSong()">⏭</button>
+      <button class="control-btn repeat" id="repeat-btn" title="Repeat">🔁</button>
+    </div>
+    <div class="volume-container">
+      <span class="volume-icon" id="volume-icon" onclick="toggleMute()">🔊</span>
+      <div class="volume-bar" id="volume-bar">
+        <div class="volume" id="volume"></div>
+      </div>
+    </div>
+    <div class="playlist" id="playlist">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
