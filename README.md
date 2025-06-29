@@ -1,4 +1,4 @@
-#🎵 CodeAlpha_Task3- MusicPlayer
+# 🎵 CodeAlpha_Task3- MusicPlayer
 
 Welcome to my submission for **Task 3: Music Player** as part of the **Frontend Development Internship at CodeAlpha**.
 
